@@ -47,6 +47,8 @@ for (let i: number = 0; i < rows; i++) {
     let cell: HTMLDivElement | null = document.createElement("div");
     cell.setAttribute("class", "cell");
     cell.setAttribute("contenteditable", "true");
+    cell.setAttribute("rid", i.toString());
+    cell.setAttribute("cid", j.toString());
     rowCont.appendChild(cell);
     addListenerOnAddressBarDispaly(cell, i, j);
   }
